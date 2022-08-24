@@ -1,6 +1,16 @@
+#https://sqliteonline.com/syntax/create_table
+
+
 create table fisica(
   Pessoa_idFisica INTEGER NOTNULL,
   CPF VARCHAR(14),
   RG VARCHAR(20),
   PRIMARY KEY (Pessoa_idFisica),
   FOREIGN key (Pessoa_idFisica), REFERENCES PESSOA (id_Pessoa));
+
+
+create table cnpj(
+  Pessoa_juridica INTEGER NOTNULL,
+  CNPJ VARCHAR(17),
+  PRIMARY key (Pessoa_juridica),
+  FOREIGN key (Pessoa_juridica), REFERENCES PESSOA (Pessoa_juridica));
