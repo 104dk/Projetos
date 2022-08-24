@@ -1,0 +1,6 @@
+create table fisica(
+  Pessoa_idFisica INTEGER NOTNULL,
+  CPF VARCHAR(14),
+  RG VARCHAR(20),
+  PRIMARY KEY (Pessoa_idFisica),
+  FOREIGN key (Pessoa_idFisica), REFERENCES PESSOA (id_Pessoa));
